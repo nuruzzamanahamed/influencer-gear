@@ -5,9 +5,12 @@
 
 /* -------------header section start ---------------*/
 header{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 50px 100px 20px;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .influence h3{
     font-weight: bold;
@@ -37,24 +40,27 @@ body{
 }
 /*----------- Main -----------*/
 main{
-   
+   margin-left: 0px !important;
 }
 .start-journey{
     margin-top: 50px;
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 4em;
-    margin: 50px 100px 20px;
+    align-items: center;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
 
 }
 .left-text{
-  
-    margin-right: 20px;
-    padding: 5px;  
+    padding: 5px; 
+    margin-left: 100px; 
 }
 .left-text h1 {
     font-size: 42px;
     margin-bottom: 10px;
+   
 }
 .left-text p{
     margin-top: 0;
@@ -143,15 +149,14 @@ main{
 }
 /* ---------- stars End ----------- */
 
-.seemone{
+.seemore{
     text-align: right;
     margin-right: 50px;
     font-size: 20px;
-    text-decoration: none;
-   
+
 }
-.seemone a{
-    color: red;
+.seemore a{
+    color:#E02C6D;
     text-decoration: none;
 }
 /*------------- footer section start--------- */
@@ -178,6 +183,22 @@ footer h3{
 /* -------- footer social icon -------------- */
 .social-icon .fa{
     margin-right: 10px;
-    font-size: 30px;
+    font-size: 25px;
+    color: white;
 }
 /*------------- footer section End--------- */
+
+/* --For responsive website ----*/
+/* ------  For Mobile devices-------*/
+@media only screen and(max-width:688px) {
+    .main{
+        width: 100%;
+    }
+    .start-journey,.popular-collections{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .collection,.e-commerce,.right-pic,.left-text{
+        flex-direction: column;
+    }
+    
+}
